@@ -6,17 +6,17 @@ module.exports = {
     displayAllHeaders: true,
     sidebar: [
       {
-        title: 'Diagrams',  
+        title: 'Diagrams',
         children: [
           '/Diagrams'
         ]
       },
       {
-        title: 'Companies',  
+        title: 'Companies',
         children: [
           {
-            title: 'myCompany',  
-            children: [          
+            title: 'myCompany',
+            children: [
               '/Companies/myCompany/Report1',
               '/Companies/myCompany/Report2'
             ]
@@ -28,7 +28,7 @@ module.exports = {
       {
         text: 'Companies',
         items: [
-          { 
+          {
             text: 'myCompany', items: [
               { text: 'Report1', link: '/Companies/myCompany/Report1' },
               { text: 'Report2', link: '/Companies/myCompany/Report2' }
@@ -37,6 +37,14 @@ module.exports = {
         ]
       }
     ]
+  },
+  locales: {
+    '/': {
+      lang: 'English'
+    },
+    '/ru/': {
+      lang: 'Русский'
+    }
   },
   markdown: {
     extendMarkdown: md => {
